@@ -22,7 +22,7 @@ function App() {
           Thank you!
         </p>
         <div className="flex items-center sm:gap-4 gap-2">
-          <a href="#" className="bg-violet-700 p-4 rounded-2xl hover:bg-violet-600">Download CV <i className="ri-download-line ri-lg"></i>
+          <a href="/resume.pdf" className="bg-violet-700 p-4 rounded-2xl hover:bg-violet-600">Download CV <i className="ri-download-line ri-lg"></i>
 
           </a>
           <a href="#project"className="bg-zinc-700 p-4 rounded-2xl hover:bg-zinc-600">Project <i className="ri-arrow-down-line ri-lg"></i></a>
@@ -88,7 +88,7 @@ function App() {
      <div className="project mt-32 py-10" id="project" >
       <h1 className="text-center text-4xl font-bold mb-2 " >Sample Projects</h1>
       <p className="text-base/loose text-center opacity-50">Unpublish Project</p>
-      <div className="proyek-box mt-14 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-3 gap-4" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+      <div className="proyek-box mt-14 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
        {listProyek.map(proyek => (
         <div key={proyek.id} className="p-4 bg-zinc-800 rounded-md">
           <img src={proyek.gambar} alt="Proyek Image" loading="lazy" />
@@ -123,7 +123,7 @@ function App() {
         Let's connect with me.
       </p>
       <form action="https://formsubmit.co/fernandorizki903@gmail.com" method="POST" className="bg-zinc-800 p-10 sm:w-fit w-full mx-auto rounded-md" autoComplete="off" data-aos="fade-up" data-aos-duration="2000">
-        <div className="flex flex-col gap-6">flip
+        <div className="flex flex-col gap-6">
           <div className="flex flex-col gap-2">
             <label className="font-semibold">Name</label>
             <input type="text" name="nama" placeholder="Your'e name..." className="border border-zinc-500
